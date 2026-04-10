@@ -1,0 +1,150 @@
+1775757960: mosquitto version 2.0.22 starting
+1775757960: Config loaded from /mosquitto/config/mosquitto.conf.
+1775757960: Opening ipv4 listen socket on port 1883.
+1775757960: Opening ipv6 listen socket on port 1883.
+1775757960: mosquitto version 2.0.22 running
+1775758098: New connection from 192.168.65.1:27763 on port 1883.
+1775758098: New client connected from 192.168.65.1:27763 as test-subscriber (p2, c1, k60).
+1775758152: New connection from 192.168.65.1:28584 on port 1883.
+1775758152: New client connected from 192.168.65.1:28584 as esp32-floor1 (p2, c1, k60).
+1775758316: Client esp32-floor1 disconnected.
+1775758499: Client test-subscriber disconnected.
+1775758518: New connection from 192.168.65.1:42670 on port 1883.
+1775758518: New client connected from 192.168.65.1:42670 as test-subscriber (p2, c1, k60).
+1775758552: New connection from 192.168.65.1:44564 on port 1883.
+1775758552: New client connected from 192.168.65.1:44564 as esp32-floor1 (p2, c1, k60).
+1775758552: New connection from 192.168.65.1:46197 on port 1883.
+1775758552: New client connected from 192.168.65.1:46197 as esp32-floor2 (p2, c1, k60).
+1775758552: New connection from 192.168.65.1:47102 on port 1883.
+1775758552: New client connected from 192.168.65.1:47102 as esp32-floor3 (p2, c1, k60).
+1775758552: New connection from 192.168.65.1:31631 on port 1883.
+1775758552: New client connected from 192.168.65.1:31631 as esp32-server-room (p2, c1, k60).
+1775758749: Client esp32-floor1 disconnected.
+1775758750: Client esp32-floor2 disconnected.
+1775758750: Client esp32-floor3 disconnected.
+1775758750: Client esp32-server-room disconnected.
+1775758762: Client test-subscriber disconnected.
+1775758857: New connection from 192.168.65.1:39398 on port 1883.
+1775758857: New client connected from 192.168.65.1:39398 as esp32-floor1 (p2, c1, k60).
+1775758857: New connection from 192.168.65.1:29431 on port 1883.
+1775758857: New client connected from 192.168.65.1:29431 as esp32-floor2 (p2, c1, k60).
+1775758857: New connection from 192.168.65.1:27243 on port 1883.
+1775758857: New client connected from 192.168.65.1:27243 as esp32-floor3 (p2, c1, k60).
+1775758857: New connection from 192.168.65.1:24991 on port 1883.
+1775758857: New client connected from 192.168.65.1:24991 as esp32-server-room (p2, c1, k60).
+1775758879: New connection from 192.168.65.1:50145 on port 1883.
+1775758879: New client connected from 192.168.65.1:50145 as monitor-agent (p2, c1, k60).
+1775759630: Client monitor-agent disconnected.
+1775759636: Client esp32-floor1 disconnected.
+1775759637: Client esp32-floor2 disconnected.
+1775759637: Client esp32-floor3 disconnected.
+1775759638: Client esp32-server-room disconnected.
+1775759760: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775759760: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775761336: New connection from 192.168.65.1:22167 on port 1883.
+1775761336: New client connected from 192.168.65.1:22167 as esp32-floor1 (p2, c1, k60).
+1775761336: New connection from 192.168.65.1:56860 on port 1883.
+1775761336: New client connected from 192.168.65.1:56860 as esp32-floor2 (p2, c1, k60).
+1775761336: New connection from 192.168.65.1:61647 on port 1883.
+1775761336: New client connected from 192.168.65.1:61647 as esp32-floor3 (p2, c1, k60).
+1775761336: New connection from 192.168.65.1:33261 on port 1883.
+1775761336: New client connected from 192.168.65.1:33261 as esp32-server-room (p2, c1, k60).
+1775761345: New connection from 192.168.65.1:50095 on port 1883.
+1775761345: New client connected from 192.168.65.1:50095 as monitor-agent (p2, c1, k60).
+1775761377: Client monitor-agent disconnected.
+1775761790: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775761790: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775761870: New connection from 192.168.65.1:36307 on port 1883.
+1775761870: New client connected from 192.168.65.1:36307 as monitor-agent (p2, c1, k60).
+1775762065: Client monitor-agent disconnected.
+1775762087: New connection from 192.168.65.1:56786 on port 1883.
+1775762087: New client connected from 192.168.65.1:56786 as monitor-agent (p2, c1, k60).
+1775762304: Client monitor-agent disconnected.
+1775762326: New connection from 192.168.65.1:50108 on port 1883.
+1775762326: New client connected from 192.168.65.1:50108 as monitor-agent (p2, c1, k60).
+1775762919: Client monitor-agent disconnected.
+1775762922: Client esp32-floor1 disconnected.
+1775762923: Client esp32-floor2 disconnected.
+1775762923: Client esp32-floor3 disconnected.
+1775762923: Client esp32-server-room disconnected.
+1775763591: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775763591: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775774792: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775774792: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775776035: New connection from 172.67.68.102:36142 on port 1883.
+1775776035: New client connected from 172.67.68.102:36142 as monitor-agent (p2, c1, k60).
+1775776046: New connection from 172.67.68.102:29224 on port 1883.
+1775776046: New client connected from 172.67.68.102:29224 as esp32-floor1 (p2, c1, k60).
+1775776046: New connection from 172.67.68.102:39401 on port 1883.
+1775776046: New client connected from 172.67.68.102:39401 as esp32-floor2 (p2, c1, k60).
+1775776046: New connection from 172.67.68.102:41527 on port 1883.
+1775776046: New client connected from 172.67.68.102:41527 as esp32-floor3 (p2, c1, k60).
+1775776046: New connection from 172.67.68.102:24630 on port 1883.
+1775776046: New client connected from 172.67.68.102:24630 as esp32-server-room (p2, c1, k60).
+1775776593: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775776593: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775776929: Client monitor-agent disconnected.
+1775776996: New connection from 172.67.68.102:21694 on port 1883.
+1775776996: New client connected from 172.67.68.102:21694 as monitor-agent (p2, c1, k60).
+1775777487: Client monitor-agent disconnected.
+1775777489: Client esp32-floor1 disconnected.
+1775777490: Client esp32-floor2 disconnected.
+1775777490: Client esp32-floor3 disconnected.
+1775777491: Client esp32-server-room disconnected.
+1775778394: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775778394: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775779100: New connection from 172.67.68.102:59785 on port 1883.
+1775779100: New client connected from 172.67.68.102:59785 as esp32-floor1 (p2, c1, k60).
+1775779100: New connection from 172.67.68.102:39963 on port 1883.
+1775779100: New client connected from 172.67.68.102:39963 as esp32-floor2 (p2, c1, k60).
+1775779100: New connection from 172.67.68.102:50131 on port 1883.
+1775779100: New client connected from 172.67.68.102:50131 as esp32-floor3 (p2, c1, k60).
+1775779100: New connection from 172.67.68.102:40908 on port 1883.
+1775779100: New client connected from 172.67.68.102:40908 as esp32-server-room (p2, c1, k60).
+1775779113: New connection from 172.67.68.102:53442 on port 1883.
+1775779113: New client connected from 172.67.68.102:53442 as monitor-agent (p2, c1, k60).
+1775780195: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775780195: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775782003: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775782003: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775831948: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775831948: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775833693: Client monitor-agent disconnected.
+1775833696: Client esp32-floor1 disconnected.
+1775833697: Client esp32-floor2 disconnected.
+1775833697: Client esp32-floor3 disconnected.
+1775833698: Client esp32-server-room disconnected.
+1775833799: New connection from 192.168.65.1:32931 on port 1883.
+1775833799: New client connected from 192.168.65.1:32931 as monitor-agent (p2, c1, k60).
+1775833811: New connection from 192.168.65.1:31728 on port 1883.
+1775833811: New client connected from 192.168.65.1:31728 as esp32-floor1 (p2, c1, k60).
+1775833811: New connection from 192.168.65.1:60724 on port 1883.
+1775833811: New client connected from 192.168.65.1:60724 as esp32-floor2 (p2, c1, k60).
+1775833811: New connection from 192.168.65.1:29162 on port 1883.
+1775833811: New client connected from 192.168.65.1:29162 as esp32-floor3 (p2, c1, k60).
+1775833811: New connection from 192.168.65.1:39201 on port 1883.
+1775833811: New client connected from 192.168.65.1:39201 as esp32-server-room (p2, c1, k60).
+1775833956: Client monitor-agent disconnected.
+1775833958: Client esp32-floor1 disconnected.
+1775833959: Client esp32-floor2 disconnected.
+1775833959: Client esp32-floor3 disconnected.
+1775833959: Client esp32-server-room disconnected.
+1775834058: New connection from 192.168.65.1:65144 on port 1883.
+1775834058: New client connected from 192.168.65.1:65144 as monitor-agent (p2, c1, k60).
+1775834065: New connection from 192.168.65.1:63553 on port 1883.
+1775834065: New client connected from 192.168.65.1:63553 as esp32-floor1 (p2, c1, k60).
+1775834065: New connection from 192.168.65.1:61477 on port 1883.
+1775834065: New client connected from 192.168.65.1:61477 as esp32-floor2 (p2, c1, k60).
+1775834065: New connection from 192.168.65.1:27258 on port 1883.
+1775834065: New connection from 192.168.65.1:38091 on port 1883.
+1775834065: New client connected from 192.168.65.1:27258 as esp32-floor3 (p2, c1, k60).
+1775834065: New client connected from 192.168.65.1:38091 as esp32-server-room (p2, c1, k60).
