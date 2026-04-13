@@ -153,3 +153,9 @@ To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
 1775834416: Client esp32-floor2 disconnected.
 1775834416: Client esp32-floor3 disconnected.
 1775834417: Client esp32-server-room disconnected.
+1775834655: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775834655: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775836456: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775836456: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.

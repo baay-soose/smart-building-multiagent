@@ -11,15 +11,6 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message
 
 
 class Orchestrator:
-    """
-    Orchestre les 3 agents en les branchant via callbacks :
-    MonitorAgent -> AnalysisAgent -> DecisionAgent
-
-    Les anomalies sont mises dans une file d'attente et
-    traitées une par une par un worker dédié — Ollama ne
-    peut traiter qu'une requête à la fois.
-    """
-
     def __init__(
         self,
         broker_host:   str  = "localhost",
@@ -51,6 +42,7 @@ class Orchestrator:
     def _on_anomaly_received(self, event: dict):
         try:
             self._queue.put_nowait(event)
+            self.logger.info(f"Anomalie mise en file — {event.get('location')} ({self._queue.qsize()} en attente)")
         except queue.Full:
             self.logger.warning(f"File pleine — événement ignoré ({event.get('location')})")
 

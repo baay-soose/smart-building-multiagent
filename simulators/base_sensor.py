@@ -125,6 +125,9 @@ class BaseSensor:
     def stop(self):
         """Arrête proprement le capteur."""
         self._running = False
-        self.client.loop_stop()
-        self.client.disconnect()
+        try:
+            self.client.loop_stop()
+            self.client.disconnect()
+        except Exception:
+            pass
         self.logger.info("Capteur arrêté.")
