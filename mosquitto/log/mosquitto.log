@@ -148,3 +148,8 @@ To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
 1775834065: New connection from 192.168.65.1:38091 on port 1883.
 1775834065: New client connected from 192.168.65.1:27258 as esp32-floor3 (p2, c1, k60).
 1775834065: New client connected from 192.168.65.1:38091 as esp32-server-room (p2, c1, k60).
+1775834413: Client monitor-agent disconnected.
+1775834416: Client esp32-floor1 disconnected.
+1775834416: Client esp32-floor2 disconnected.
+1775834416: Client esp32-floor3 disconnected.
+1775834417: Client esp32-server-room disconnected.
