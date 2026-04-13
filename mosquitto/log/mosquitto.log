@@ -159,3 +159,104 @@ To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
 1775836456: Saving in-memory database to /mosquitto/data//mosquitto.db.
 1775836456: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
 To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775842241: mosquitto version 2.0.22 starting
+1775842241: Config loaded from /mosquitto/config/mosquitto.conf.
+1775842241: Opening ipv4 listen socket on port 1883.
+1775842241: Opening ipv6 listen socket on port 1883.
+1775842241: mosquitto version 2.0.22 running
+1775842433: New connection from 192.168.65.1:30321 on port 1883.
+1775842433: New client connected from 192.168.65.1:30321 as monitor-agent (p2, c1, k60).
+1775842506: Client monitor-agent disconnected.
+1775842533: New connection from 192.168.65.1:28692 on port 1883.
+1775842533: New client connected from 192.168.65.1:28692 as monitor-agent (p2, c1, k60).
+1775842545: New connection from 192.168.65.1:53577 on port 1883.
+1775842545: New client connected from 192.168.65.1:53577 as esp32-floor1 (p2, c1, k60).
+1775842545: New connection from 192.168.65.1:45175 on port 1883.
+1775842545: New client connected from 192.168.65.1:45175 as esp32-floor2 (p2, c1, k60).
+1775842545: New connection from 192.168.65.1:47004 on port 1883.
+1775842545: New client connected from 192.168.65.1:47004 as esp32-floor3 (p2, c1, k60).
+1775842545: New connection from 192.168.65.1:23444 on port 1883.
+1775842545: New client connected from 192.168.65.1:23444 as esp32-server-room (p2, c1, k60).
+1775843456: Client esp32-floor1 disconnected.
+1775843456: Client esp32-floor2 disconnected.
+1775843456: Client esp32-floor3 disconnected.
+1775843456: Client esp32-server-room disconnected.
+1775844042: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775844042: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775845843: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775845843: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775855151: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775855151: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775857844: New connection from 192.168.65.1:27003 on port 1883.
+1775857844: New connection from 192.168.65.1:27372 on port 1883.
+1775857844: New connection from 192.168.65.1:28479 on port 1883.
+1775857844: New connection from 192.168.65.1:24428 on port 1883.
+1775857844: New connection from 192.168.65.1:26475 on port 1883.
+1775857844: New connection from 192.168.65.1:25117 on port 1883.
+1775857844: New connection from 192.168.65.1:30120 on port 1883.
+1775857844: New connection from 192.168.65.1:58592 on port 1883.
+1775857844: New connection from 192.168.65.1:51116 on port 1883.
+1775857844: New connection from 192.168.65.1:30060 on port 1883.
+1775857844: New connection from 192.168.65.1:46434 on port 1883.
+1775857844: New connection from 192.168.65.1:23344 on port 1883.
+1775857844: New connection from 192.168.65.1:17434 on port 1883.
+1775857844: New connection from 192.168.65.1:20126 on port 1883.
+1775857844: New connection from 192.168.65.1:46389 on port 1883.
+1775857844: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775857844: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1775857844: Client monitor-agent closed its connection.
+1775857844: New client connected from 192.168.65.1:27003 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:27372 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:28479 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:24428 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:26475 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:25117 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:30120 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:58592 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:51116 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:30060 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:46434 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:23344 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:17434 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:20126 as monitor-agent (p2, c1, k60).
+1775857844: Client monitor-agent already connected, closing old connection.
+1775857844: New client connected from 192.168.65.1:46389 as monitor-agent (p2, c1, k60).
+1775857845: Client monitor-agent closed its connection.
+1775860606: New connection from 192.168.65.1:30597 on port 1883.
+1775860606: New client connected from 192.168.65.1:30597 as monitor-agent (p2, c1, k60).
+1775866114: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1775866114: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776016197: New connection from 192.168.65.1:45209 on port 1883.
+1776016197: New connection from 192.168.65.1:40970 on port 1883.
+1776016197: New connection from 192.168.65.1:44323 on port 1883.
+1776016197: Client monitor-agent closed its connection.
+1776016197: New client connected from 192.168.65.1:45209 as monitor-agent (p2, c1, k60).
+1776016197: Client monitor-agent already connected, closing old connection.
+1776016197: New client connected from 192.168.65.1:40970 as monitor-agent (p2, c1, k60).
+1776016197: Client monitor-agent already connected, closing old connection.
+1776016197: New client connected from 192.168.65.1:44323 as monitor-agent (p2, c1, k60).
+1776017840: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776017840: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776019641: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776019641: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776041504: Client monitor-agent closed its connection.
