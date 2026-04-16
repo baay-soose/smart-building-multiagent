@@ -17,7 +17,7 @@ class Orchestrator:
         broker_port:   int  = 1883,
         ollama_url:    str  = "http://localhost:11434/api/generate",
         dry_run:       bool = False,
-        queue_maxsize: int  = 20,
+        queue_maxsize: int  = 10,
     ):
         self.logger = logging.getLogger("Orchestrator")
 
@@ -40,6 +40,12 @@ class Orchestrator:
         )
 
     def _on_anomaly_received(self, event: dict):
+        # Filtrer — envoyer à Ollama seulement high et critical
+        severities = [a.get("severity", "medium") for a in event.get("anomalies", [])]
+        if "critical" not in severities and "high" not in severities:
+            self.logger.debug(f"[IGNORÉ] Anomalie medium — {event.get('location')}")
+            return
+
         try:
             self._queue.put_nowait(event)
             self.logger.info(f"Anomalie mise en file — {event.get('location')} ({self._queue.qsize()} en attente)")

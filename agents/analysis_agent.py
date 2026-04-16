@@ -8,24 +8,28 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message
 OLLAMA_URL   = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "mistral:7b-instruct-q4_0"
 
-PROMPT_TEMPLATE = """[INST] You are a smart building AI. Analyze this sensor anomaly and respond ONLY with a single JSON object.
+PROMPT_TEMPLATE = """[INST] Tu es un expert en gestion de bâtiment intelligent. IMPORTANT : tu dois répondre UNIQUEMENT en français. Ne réponds jamais en anglais.
 
-Location: {location}
-Sensor: {sensor_id}
-Values: {values}
-Anomalies: {anomalies}
+Voici une anomalie détectée par un capteur IoT :
+Zone : {location}
+Capteur : {sensor_id}
+Valeurs mesurées : {values}
+Anomalies détectées : {anomalies}
 
-Respond with ONLY this JSON, nothing else, no explanation:
+Réponds avec UNIQUEMENT ce JSON en français, rien d'autre :
 {{
-  "diagnostic": "one sentence describing the situation",
-  "cause_probable": "most likely cause",
+  "diagnostic": "une phrase en français décrivant la situation",
+  "cause_probable": "la cause la plus probable en français",
   "risque": "low",
-  "action_recommandee": "action to take",
+  "action_recommandee": "action concrète à effectuer en français",
   "urgence": false
 }}
 
-Replace the values appropriately. risque must be exactly one of: low, medium, high, critical.
-urgence must be exactly true or false. [/INST]"""
+RÈGLES STRICTES :
+- Toutes les valeurs textuelles doivent être en français
+- risque doit être exactement l'un de : low, medium, high, critical
+- urgence doit être exactement true ou false
+- Aucun texte en dehors du JSON [/INST]"""
 
 
 class AnalysisAgent:
@@ -59,6 +63,10 @@ class AnalysisAgent:
             raw_response = self._call_ollama(prompt)
             diagnostic   = self._parse_response(raw_response)
 
+            # Injecter les flags directs depuis les valeurs capteurs
+            values = anomaly_event.get("values", {})
+            diagnostic["_smoke_detected"] = values.get("smoke", 0) == 1
+
             if diagnostic:
                 result = {"anomaly_event": anomaly_event, "diagnostic": diagnostic}
                 self.logger.info(
@@ -79,7 +87,8 @@ class AnalysisAgent:
             "model":  self.model,
             "prompt": prompt,
             "stream": False,
-            "format": "json",  # Force Ollama à retourner du JSON valide
+            "format": "json",
+            "system": "Tu es un expert en gestion de bâtiment intelligent. Tu réponds TOUJOURS en français, jamais en anglais.",
         }
         response = requests.post(self.ollama_url, json=payload, timeout=150)
         response.raise_for_status()

@@ -260,3 +260,185 @@ To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
 1776019641: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
 To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
 1776041504: Client monitor-agent closed its connection.
+1776041764: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776041764: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776046811: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776046811: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776054010: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776054010: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776055811: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776055811: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776057613: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776057613: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776059414: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776059414: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776105812: mosquitto version 2.0.22 starting
+1776105812: Config loaded from /mosquitto/config/mosquitto.conf.
+1776105812: Opening ipv4 listen socket on port 1883.
+1776105812: Opening ipv6 listen socket on port 1883.
+1776105812: mosquitto version 2.0.22 running
+1776106174: New connection from 172.18.0.1:60292 on port 1883.
+1776106174: New client connected from 172.18.0.1:60292 as monitor-agent (p2, c1, k60).
+1776106184: New connection from 172.18.0.1:59828 on port 1883.
+1776106184: New client connected from 172.18.0.1:59828 as esp32-floor1 (p2, c1, k60).
+1776106184: New connection from 172.18.0.1:59836 on port 1883.
+1776106184: New client connected from 172.18.0.1:59836 as esp32-floor2 (p2, c1, k60).
+1776106184: New connection from 172.18.0.1:59850 on port 1883.
+1776106184: New client connected from 172.18.0.1:59850 as esp32-floor3 (p2, c1, k60).
+1776106184: New connection from 172.18.0.1:59862 on port 1883.
+1776106184: New client connected from 172.18.0.1:59862 as esp32-server-room (p2, c1, k60).
+1776106677: Client esp32-floor1 disconnected.
+1776106678: Client esp32-floor2 disconnected.
+1776106679: Client esp32-floor3 disconnected.
+1776106680: Client esp32-server-room disconnected.
+1776106872: Client monitor-agent disconnected.
+1776107613: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776107613: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776108530: New connection from 172.18.0.1:58914 on port 1883.
+1776108530: New client connected from 172.18.0.1:58914 as monitor-agent (p2, c1, k60).
+1776108537: New connection from 172.18.0.1:58920 on port 1883.
+1776108537: New client connected from 172.18.0.1:58920 as esp32-floor1 (p2, c1, k60).
+1776108537: New connection from 172.18.0.1:58936 on port 1883.
+1776108537: New client connected from 172.18.0.1:58936 as esp32-floor2 (p2, c1, k60).
+1776108537: New connection from 172.18.0.1:58950 on port 1883.
+1776108537: New client connected from 172.18.0.1:58950 as esp32-floor3 (p2, c1, k60).
+1776108537: New connection from 172.18.0.1:58954 on port 1883.
+1776108537: New client connected from 172.18.0.1:58954 as esp32-server-room (p2, c1, k60).
+1776109243: Client esp32-floor1 disconnected.
+1776109243: Client esp32-floor2 disconnected.
+1776109244: Client esp32-floor3 disconnected.
+1776109244: Client esp32-server-room disconnected.
+1776109897: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776109897: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776111723: Client monitor-agent disconnected.
+1776111854: New connection from 172.18.0.1:60260 on port 1883.
+1776111854: New client connected from 172.18.0.1:60260 as monitor-agent (p2, c1, k60).
+1776111867: New connection from 172.18.0.1:60386 on port 1883.
+1776111867: New client connected from 172.18.0.1:60386 as esp32-floor1 (p2, c1, k60).
+1776111867: New connection from 172.18.0.1:60398 on port 1883.
+1776111867: New client connected from 172.18.0.1:60398 as esp32-floor2 (p2, c1, k60).
+1776111867: New connection from 172.18.0.1:60412 on port 1883.
+1776111867: New client connected from 172.18.0.1:60412 as esp32-floor3 (p2, c1, k60).
+1776111867: New connection from 172.18.0.1:60418 on port 1883.
+1776111867: New client connected from 172.18.0.1:60418 as esp32-server-room (p2, c1, k60).
+1776112198: Client esp32-floor1 disconnected.
+1776112198: Client esp32-floor2 disconnected.
+1776112198: Client esp32-floor3 disconnected.
+1776112198: Client esp32-server-room disconnected.
+1776112625: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776112625: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776115365: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776115365: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776116095: Client monitor-agent closed its connection.
+1776116123: New connection from 172.18.0.1:56100 on port 1883.
+1776116123: New client connected from 172.18.0.1:56100 as monitor-agent (p2, c1, k60).
+1776116128: New connection from 172.18.0.1:56108 on port 1883.
+1776116128: New client connected from 172.18.0.1:56108 as esp32-floor1 (p2, c1, k60).
+1776116128: New connection from 172.18.0.1:56114 on port 1883.
+1776116128: New client connected from 172.18.0.1:56114 as esp32-floor2 (p2, c1, k60).
+1776116128: New connection from 172.18.0.1:57256 on port 1883.
+1776116128: New client connected from 172.18.0.1:57256 as esp32-floor3 (p2, c1, k60).
+1776116128: New connection from 172.18.0.1:57266 on port 1883.
+1776116128: New client connected from 172.18.0.1:57266 as esp32-server-room (p2, c1, k60).
+1776116866: Client esp32-floor1 disconnected.
+1776116866: Client esp32-floor2 disconnected.
+1776116866: Client esp32-floor3 disconnected.
+1776116867: Client esp32-server-room disconnected.
+1776116872: Client monitor-agent disconnected.
+1776116923: New connection from 172.18.0.1:65210 on port 1883.
+1776116923: New client connected from 172.18.0.1:65210 as monitor-agent (p2, c1, k60).
+1776116927: New connection from 172.18.0.1:65216 on port 1883.
+1776116927: New client connected from 172.18.0.1:65216 as scenario-tester (p2, c1, k60).
+1776116958: Client scenario-tester disconnected.
+1776117169: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776117169: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776118970: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776118970: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776121309: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776121309: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776123110: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776123110: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776124424: New connection from 172.18.0.1:62656 on port 1883.
+1776124424: New connection from 172.18.0.1:58982 on port 1883.
+1776124424: New connection from 172.18.0.1:62522 on port 1883.
+1776124424: New connection from 172.18.0.1:61584 on port 1883.
+1776124424: New connection from 172.18.0.1:62972 on port 1883.
+1776124424: New connection from 172.18.0.1:58476 on port 1883.
+1776124424: New connection from 172.18.0.1:59720 on port 1883.
+1776124424: New connection from 172.18.0.1:55970 on port 1883.
+1776124424: New connection from 172.18.0.1:56834 on port 1883.
+1776124424: New connection from 172.18.0.1:64584 on port 1883.
+1776124424: New connection from 172.18.0.1:64504 on port 1883.
+1776124424: Client monitor-agent closed its connection.
+1776124424: New client connected from 172.18.0.1:62656 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:58982 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:62522 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:61584 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:62972 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:58476 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:59720 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:55970 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:56834 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:64584 as monitor-agent (p2, c1, k60).
+1776124424: Client monitor-agent already connected, closing old connection.
+1776124424: New client connected from 172.18.0.1:64504 as monitor-agent (p2, c1, k60).
+1776153482: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776153482: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776180085: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776180085: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776180241: New connection from 172.18.0.1:64908 on port 1883.
+1776180241: New connection from 172.18.0.1:55560 on port 1883.
+1776180241: Client monitor-agent closed its connection.
+1776180241: New client connected from 172.18.0.1:64908 as monitor-agent (p2, c1, k60).
+1776180241: Client monitor-agent already connected, closing old connection.
+1776180241: New client connected from 172.18.0.1:55560 as monitor-agent (p2, c1, k60).
+1776180241: Client monitor-agent closed its connection.
+1776180243: New connection from 172.18.0.1:55794 on port 1883.
+1776180243: New client connected from 172.18.0.1:55794 as monitor-agent (p2, c1, k60).
+1776207912: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776207912: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776238432: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1776238432: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1776238764: New connection from 172.18.0.1:56984 on port 1883.
+1776238764: New connection from 172.18.0.1:55908 on port 1883.
+1776238764: New connection from 172.18.0.1:62074 on port 1883.
+1776238764: New connection from 172.18.0.1:62738 on port 1883.
+1776238764: New connection from 172.18.0.1:62280 on port 1883.
+1776238764: Client monitor-agent closed its connection.
+1776238764: New client connected from 172.18.0.1:56984 as monitor-agent (p2, c1, k60).
+1776238764: Client monitor-agent already connected, closing old connection.
+1776238764: New client connected from 172.18.0.1:55908 as monitor-agent (p2, c1, k60).
+1776238764: Client monitor-agent already connected, closing old connection.
+1776238764: New client connected from 172.18.0.1:62074 as monitor-agent (p2, c1, k60).
+1776238764: Client monitor-agent already connected, closing old connection.
+1776238764: New client connected from 172.18.0.1:62738 as monitor-agent (p2, c1, k60).
+1776238764: Client monitor-agent already connected, closing old connection.
+1776238764: New client connected from 172.18.0.1:62280 as monitor-agent (p2, c1, k60).
+1776238764: Client monitor-agent closed its connection.

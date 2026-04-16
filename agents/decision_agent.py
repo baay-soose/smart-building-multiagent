@@ -21,13 +21,18 @@ N8N_WEBHOOKS = {
 # ------------------------------------------------------------------
 DECISION_RULES = [
     {
-        "condition": lambda d, loc: d.get("risque") == "critical" and loc == "floor3",
+        "condition": lambda d, loc: loc == "floor3" and d.get("_smoke_detected"),
+        "actions":   ["fire", "alert"],
+        "label":     "Incendie — fumée détectée (direct)",
+    },
+    {
+        "condition": lambda d, loc: loc == "floor3" and d.get("risque") in ("critical", "high") and d.get("urgence"),
         "actions":   ["fire", "alert"],
         "label":     "Alerte incendie",
     },
     {
-        "condition": lambda d, loc: d.get("risque") == "critical" and loc == "server_room",
-        "actions":   ["power", "alert"],
+        "condition": lambda d, loc: loc == "server_room" and d.get("risque") in ("critical", "high") and d.get("urgence"),
+        "actions":   ["power", "hvac", "alert"],
         "label":     "Coupure alimentation serveur",
     },
     {
@@ -64,9 +69,15 @@ class DecisionAgent:
         diagnostic    = result.get("diagnostic", {})
         location      = anomaly_event.get("location", "unknown")
 
-        # Normaliser le risque en minuscules (Mistral peut retourner "Medium", "High"...)
+        # Normaliser le risque en minuscules et traduire les termes français
         if "risque" in diagnostic:
-            diagnostic["risque"] = diagnostic["risque"].lower()
+            risque = diagnostic["risque"].lower()
+            risque = risque.replace("critique", "critical")
+            risque = risque.replace("élevé", "high")
+            risque = risque.replace("eleve", "high")
+            risque = risque.replace("moyen", "medium")
+            risque = risque.replace("faible", "low")
+            diagnostic["risque"] = risque
 
         self.logger.info(
             f"Décision en cours — {location} | "
