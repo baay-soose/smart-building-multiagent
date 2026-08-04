@@ -150054,3 +150054,382 @@ To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
 1784567746: Client esp32-floor1 closed its connection.
 1784567746: Client esp32-floor2 closed its connection.
 1784567746: Client monitor-agent closed its connection.
+1784568001: mosquitto version 2.0.22 starting
+1784568001: Config loaded from /mosquitto/config/mosquitto.conf.
+1784568001: Opening ipv4 listen socket on port 1883.
+1784568001: Opening ipv6 listen socket on port 1883.
+1784568001: mosquitto version 2.0.22 running
+1784568009: New connection from 172.18.0.1:57256 on port 1883.
+1784568009: New client connected from 172.18.0.1:57256 as decision-agent-publisher (p2, c1, k60).
+1784568009: New connection from 172.18.0.1:57268 on port 1883.
+1784568009: New client connected from 172.18.0.1:57268 as monitor-agent (p2, c1, k60).
+1784568074: New connection from 172.18.0.1:55082 on port 1883.
+1784568074: New client connected from 172.18.0.1:55082 as esp32-floor1 (p2, c1, k60).
+1784568074: New connection from 172.18.0.1:55090 on port 1883.
+1784568074: New client connected from 172.18.0.1:55090 as esp32-floor2 (p2, c1, k60).
+1784568074: New connection from 172.18.0.1:55104 on port 1883.
+1784568074: New client connected from 172.18.0.1:55104 as esp32-floor3 (p2, c1, k60).
+1784568074: New connection from 172.18.0.1:55116 on port 1883.
+1784568074: New client connected from 172.18.0.1:55116 as esp32-server-room (p2, c1, k60).
+1784568174: New connection from 172.18.0.1:64498 on port 1883.
+1784568174: New client connected from 172.18.0.1:64498 as dashboard-sb (p2, c1, k60).
+1784569802: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784569802: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784573566: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784573566: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784575367: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784575367: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784577168: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784577168: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784578969: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784578969: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784580770: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784580770: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784582571: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784582571: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784584372: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784584372: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784586175: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784586175: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784587976: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784587976: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784595175: New connection from 172.18.0.1:57462 on port 1883.
+1784595175: New connection from 172.18.0.1:57460 on port 1883.
+1784595175: New connection from 172.18.0.1:57472 on port 1883.
+1784595175: New connection from 172.18.0.1:65360 on port 1883.
+1784595175: New connection from 172.18.0.1:65366 on port 1883.
+1784595175: New connection from 172.18.0.1:65378 on port 1883.
+1784595175: New connection from 172.18.0.1:61664 on port 1883.
+1784595175: New connection from 172.18.0.1:60894 on port 1883.
+1784595175: New connection from 172.18.0.1:60902 on port 1883.
+1784595175: New connection from 172.18.0.1:63008 on port 1883.
+1784595175: New connection from 172.18.0.1:58274 on port 1883.
+1784595175: New connection from 172.18.0.1:58278 on port 1883.
+1784595175: New connection from 172.18.0.1:64560 on port 1883.
+1784595175: New connection from 172.18.0.1:64574 on port 1883.
+1784595175: New connection from 172.18.0.1:61670 on port 1883.
+1784595175: New connection from 172.18.0.1:61676 on port 1883.
+1784595175: New connection from 172.18.0.1:61678 on port 1883.
+1784595175: New connection from 172.18.0.1:56152 on port 1883.
+1784595175: New connection from 172.18.0.1:56166 on port 1883.
+1784595175: New connection from 172.18.0.1:56168 on port 1883.
+1784595175: New connection from 172.18.0.1:57542 on port 1883.
+1784595175: New connection from 172.18.0.1:65036 on port 1883.
+1784595175: New connection from 172.18.0.1:65042 on port 1883.
+1784595175: New connection from 172.18.0.1:65054 on port 1883.
+1784595175: New connection from 172.18.0.1:57420 on port 1883.
+1784595175: New connection from 172.18.0.1:57422 on port 1883.
+1784595175: New connection from 172.18.0.1:57428 on port 1883.
+1784595175: New connection from 172.18.0.1:63596 on port 1883.
+1784595175: New connection from 172.18.0.1:55370 on port 1883.
+1784595175: New connection from 172.18.0.1:55378 on port 1883.
+1784595175: New connection from 172.18.0.1:60830 on port 1883.
+1784595175: New connection from 172.18.0.1:57702 on port 1883.
+1784595175: New connection from 172.18.0.1:57718 on port 1883.
+1784595175: New connection from 172.18.0.1:59390 on port 1883.
+1784595175: New connection from 172.18.0.1:59400 on port 1883.
+1784595175: New connection from 172.18.0.1:64920 on port 1883.
+1784595175: New connection from 172.18.0.1:64926 on port 1883.
+1784595175: New connection from 172.18.0.1:62118 on port 1883.
+1784595175: New connection from 172.18.0.1:55180 on port 1883.
+1784595175: New connection from 172.18.0.1:55190 on port 1883.
+1784595175: New connection from 172.18.0.1:55198 on port 1883.
+1784595175: New connection from 172.18.0.1:55210 on port 1883.
+1784595175: New connection from 172.18.0.1:59806 on port 1883.
+1784595175: New connection from 172.18.0.1:59816 on port 1883.
+1784595175: New connection from 172.18.0.1:59830 on port 1883.
+1784595175: New connection from 172.18.0.1:55510 on port 1883.
+1784595175: New connection from 172.18.0.1:55518 on port 1883.
+1784595175: New connection from 172.18.0.1:55534 on port 1883.
+1784595175: New connection from 172.18.0.1:63782 on port 1883.
+1784595175: New connection from 172.18.0.1:63324 on port 1883.
+1784595175: New connection from 172.18.0.1:63336 on port 1883.
+1784595175: New connection from 172.18.0.1:63348 on port 1883.
+1784595175: New connection from 172.18.0.1:58448 on port 1883.
+1784595175: New connection from 172.18.0.1:58464 on port 1883.
+1784595175: New connection from 172.18.0.1:58476 on port 1883.
+1784595175: New connection from 172.18.0.1:63682 on port 1883.
+1784595175: New connection from 172.18.0.1:62334 on port 1883.
+1784595175: New connection from 172.18.0.1:62336 on port 1883.
+1784595175: New connection from 172.18.0.1:62340 on port 1883.
+1784595175: New connection from 172.18.0.1:55540 on port 1883.
+1784595175: New connection from 172.18.0.1:55548 on port 1883.
+1784595175: New connection from 172.18.0.1:55562 on port 1883.
+1784595175: New connection from 172.18.0.1:57998 on port 1883.
+1784595175: New connection from 172.18.0.1:57416 on port 1883.
+1784595175: New connection from 172.18.0.1:57430 on port 1883.
+1784595175: New connection from 172.18.0.1:57436 on port 1883.
+1784595175: New connection from 172.18.0.1:58264 on port 1883.
+1784595175: New connection from 172.18.0.1:58276 on port 1883.
+1784595175: New connection from 172.18.0.1:58286 on port 1883.
+1784595175: New connection from 172.18.0.1:59086 on port 1883.
+1784595175: New connection from 172.18.0.1:58980 on port 1883.
+1784595175: New connection from 172.18.0.1:58982 on port 1883.
+1784595175: New connection from 172.18.0.1:58984 on port 1883.
+1784595175: New connection from 172.18.0.1:59284 on port 1883.
+1784595175: New connection from 172.18.0.1:59300 on port 1883.
+1784595175: New connection from 172.18.0.1:59310 on port 1883.
+1784595175: New connection from 172.18.0.1:55980 on port 1883.
+1784595175: New connection from 172.18.0.1:56868 on port 1883.
+1784595175: New connection from 172.18.0.1:56872 on port 1883.
+1784595175: New connection from 172.18.0.1:62372 on port 1883.
+1784595175: New connection from 172.18.0.1:58838 on port 1883.
+1784595175: New connection from 172.18.0.1:58846 on port 1883.
+1784595175: New connection from 172.18.0.1:64520 on port 1883.
+1784595175: New connection from 172.18.0.1:64534 on port 1883.
+1784595175: New connection from 172.18.0.1:60040 on port 1883.
+1784595175: New connection from 172.18.0.1:60052 on port 1883.
+1784595175: New connection from 172.18.0.1:64632 on port 1883.
+1784595175: New connection from 172.18.0.1:63022 on port 1883.
+1784595175: New connection from 172.18.0.1:63038 on port 1883.
+1784595175: New connection from 172.18.0.1:63106 on port 1883.
+1784595175: New connection from 172.18.0.1:63112 on port 1883.
+1784595175: New connection from 172.18.0.1:64000 on port 1883.
+1784595175: New connection from 172.18.0.1:64016 on port 1883.
+1784595175: New connection from 172.18.0.1:63784 on port 1883.
+1784595175: New connection from 172.18.0.1:56192 on port 1883.
+1784595175: New connection from 172.18.0.1:58076 on port 1883.
+1784595175: New connection from 172.18.0.1:58082 on port 1883.
+1784595175: New connection from 172.18.0.1:58088 on port 1883.
+1784595175: New connection from 172.18.0.1:56084 on port 1883.
+1784595175: New connection from 172.18.0.1:56092 on port 1883.
+1784595175: New connection from 172.18.0.1:60340 on port 1883.
+1784595175: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784595175: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1784595175: Client esp32-floor1 closed its connection.
+1784595175: Client esp32-floor2 closed its connection.
+1784595175: Client decision-agent-publisher closed its connection.
+1784595175: Client monitor-agent closed its connection.
+1784595175: Client esp32-server-room closed its connection.
+1784595175: Client esp32-floor3 closed its connection.
+1784595175: Client dashboard-sb closed its connection.
+1784595175: New client connected from 172.18.0.1:57462 as esp32-floor1 (p2, c1, k60).
+1784595175: New client connected from 172.18.0.1:57460 as esp32-floor2 (p2, c1, k60).
+1784595175: New client connected from 172.18.0.1:57472 as decision-agent-publisher (p2, c1, k60).
+1784595175: New client connected from 172.18.0.1:65360 as monitor-agent (p2, c1, k60).
+1784595175: New client connected from 172.18.0.1:65366 as esp32-server-room (p2, c1, k60).
+1784595175: New client connected from 172.18.0.1:65378 as esp32-floor3 (p2, c1, k60).
+1784595175: New client connected from 172.18.0.1:61664 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:60894 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:60902 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63008 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58274 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58278 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:64560 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:64574 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:61670 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:61676 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:61678 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:56152 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:56166 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:56168 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57542 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:65036 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:65042 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:65054 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57420 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57422 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57428 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63596 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55370 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55378 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:60830 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57702 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57718 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:59390 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:59400 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:64920 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:64926 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:62118 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55180 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55190 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55198 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55210 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:59806 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:59816 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:59830 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55510 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55518 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55534 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63782 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63324 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63336 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63348 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58448 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58464 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58476 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63682 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:62334 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:62336 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:62340 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55540 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55548 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55562 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57998 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57416 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57430 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:57436 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58264 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58276 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58286 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:59086 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58980 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58982 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58984 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:59284 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:59300 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:59310 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:55980 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:56868 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:56872 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:62372 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58838 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58846 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:64520 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:64534 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:60040 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:60052 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:64632 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63022 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63038 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63106 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63112 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:64000 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:64016 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:63784 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:56192 as monitor-agent (p2, c1, k60).
+1784595175: Client esp32-server-room already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58076 as esp32-server-room (p2, c1, k60).
+1784595175: Client esp32-floor3 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58082 as esp32-floor3 (p2, c1, k60).
+1784595175: Client dashboard-sb already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:58088 as dashboard-sb (p2, c1, k60).
+1784595175: Client esp32-floor1 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:56084 as esp32-floor1 (p2, c1, k60).
+1784595175: Client esp32-floor2 already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:56092 as esp32-floor2 (p2, c1, k60).
+1784595175: Client decision-agent-publisher already connected, closing old connection.
+1784595175: New client connected from 172.18.0.1:60340 as decision-agent-publisher (p2, c1, k60).
+1784595175: Client monitor-agent closed its connection.
+1784595175: Client esp32-server-room closed its connection.
+1784595175: Client esp32-floor3 closed its connection.
+1784595175: Client dashboard-sb closed its connection.
+1784595175: Client esp32-floor1 closed its connection.
+1784595175: Client esp32-floor2 closed its connection.
+1784595175: Client decision-agent-publisher closed its connection.
+1784595217: New connection from 172.18.0.1:64012 on port 1883.
+1784595217: New client connected from 172.18.0.1:64012 as esp32-floor1 (p2, c1, k60).
+1784595217: New connection from 172.18.0.1:64018 on port 1883.
+1784595217: New client connected from 172.18.0.1:64018 as esp32-floor2 (p2, c1, k60).
+1784595220: New connection from 172.18.0.1:64020 on port 1883.
+1784595220: New client connected from 172.18.0.1:64020 as decision-agent-publisher (p2, c1, k60).
+1784595258: New connection from 172.18.0.1:61346 on port 1883.
+1784595258: New client connected from 172.18.0.1:61346 as monitor-agent (p2, c1, k60).
+1784595259: New connection from 172.18.0.1:61360 on port 1883.
+1784595259: New client connected from 172.18.0.1:61360 as esp32-server-room (p2, c1, k60).
+1784595260: New connection from 172.18.0.1:61362 on port 1883.
+1784595260: New client connected from 172.18.0.1:61362 as esp32-floor3 (p2, c1, k60).
+1784595266: New connection from 172.18.0.1:55478 on port 1883.
+1784595266: New client connected from 172.18.0.1:55478 as dashboard-sb (p2, c1, k60).
+1784596976: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1784596976: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
