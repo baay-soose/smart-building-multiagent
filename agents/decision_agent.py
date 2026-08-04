@@ -17,23 +17,23 @@ N8N_WEBHOOKS = {
 DECISION_RULES = [
     {
         "condition": lambda d, loc: loc == "floor3" and d.get("_smoke_detected"),
-        "actions":   ["fire", "alert"],
+        "actions":   ["fire"],
         "label":     "Incendie — fumée détectée (direct)",
     },
     {
         "condition": lambda d, loc: loc == "floor3" and d.get("risque") in ("critical", "high") and d.get("urgence"),
-        "actions":   ["fire", "alert"],
+        "actions":   ["fire"],
         "label":     "Alerte incendie",
     },
     {
         "condition": lambda d, loc: loc == "server_room" and d.get("risque") in ("critical", "high") and d.get("urgence"),
-        "actions":   ["power", "hvac", "alert"],
+        "actions":   ["power", "hvac"],
         "label":     "Coupure alimentation serveur",
     },
     {
         "condition": lambda d, loc: d.get("risque") in ("critical", "high") and d.get("urgence"),
-        "actions":   ["hvac", "alert"],
-        "label":     "Activation HVAC + alerte",
+        "actions":   ["hvac"],
+        "label":     "Activation HVAC",
     },
     {
         "condition": lambda d, loc: d.get("risque") == "medium",
@@ -41,7 +41,6 @@ DECISION_RULES = [
         "label":     "Alerte standard",
     },
 ]
-
 
 class DecisionAgent:
 

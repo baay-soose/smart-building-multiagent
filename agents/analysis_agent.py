@@ -1,134 +1,161 @@
 import json
 import logging
-import requests
-from typing import Callable, Optional
+import subprocess
+import re
+from typing import Optional
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message)s")
 
-OLLAMA_URL   = "http://localhost:11434/api/generate"
-OLLAMA_MODEL = "mistral:7b-instruct-q4_0"
-
-PROMPT_TEMPLATE = """[INST] Tu es un expert en gestion de bâtiment intelligent. IMPORTANT : tu dois répondre UNIQUEMENT en français. Ne réponds jamais en anglais.
-
-Voici une anomalie détectée par un capteur IoT :
-Zone : {location}
-Capteur : {sensor_id}
-Valeurs mesurées : {values}
-Anomalies détectées : {anomalies}
-
-Réponds avec UNIQUEMENT ce JSON en français, rien d'autre :
-{{
-  "diagnostic": "une phrase en français décrivant la situation",
-  "cause_probable": "la cause la plus probable en français",
-  "risque": "low",
-  "action_recommandee": "action concrète à effectuer en français",
-  "urgence": false
-}}
-
-RÈGLES STRICTES :
-- Toutes les valeurs textuelles doivent être en français
-- risque doit être exactement l'un de : low, medium, high, critical
-- urgence doit être exactement true ou false
-- Aucun texte en dehors du JSON [/INST]"""
-
 
 class AnalysisAgent:
+    """
+    Agent d'analyse — utilise PicoClaw (Claude Sonnet 4.6 via Anthropic)
+    au lieu d'Ollama pour analyser les anomalies IoT.
+    """
+
     def __init__(
         self,
-        ollama_url: str = OLLAMA_URL,
-        model: str = OLLAMA_MODEL,
-        on_decision: Optional[Callable] = None,
+        container_name: str = "picoclaw",
+        on_decision=None,
+        timeout: int = 60,
     ):
-        self.ollama_url  = ollama_url
-        self.model       = model
-        self.on_decision = on_decision
-        self.logger      = logging.getLogger("AnalysisAgent")
+        self.container_name = container_name
+        self.on_decision    = on_decision
+        self.timeout        = timeout
+        self.logger         = logging.getLogger("AnalysisAgent")
+
+    # ------------------------------------------------------------------
+    # Point d'entrée — appelé par l'Orchestrator
+    # ------------------------------------------------------------------
 
     def analyze(self, anomaly_event: dict):
-        location  = anomaly_event.get("location", "unknown")
-        sensor_id = anomaly_event.get("sensor_id", "unknown")
-        values    = anomaly_event.get("values", {})
-        anomalies = anomaly_event.get("anomalies", [])
+        location    = anomaly_event.get("location", "unknown")
+        sensor_id   = anomaly_event.get("sensor_id", "unknown")
+        values      = anomaly_event.get("values", {})
+        anomalies   = anomaly_event.get("anomalies", [])
 
-        self.logger.info(f"Analyse en cours — {location} | {len(anomalies)} anomalie(s)")
+        self.logger.info(f"Analyse de l'anomalie sur {location} via PicoClaw...")
 
-        prompt = PROMPT_TEMPLATE.format(
-            location=location,
-            sensor_id=sensor_id,
-            values=json.dumps(values, ensure_ascii=False),
-            anomalies=", ".join(a["reason"] for a in anomalies),
+        prompt = self._build_prompt(location, sensor_id, values, anomalies)
+        diagnostic = self._query_picoclaw(prompt)
+
+        if not diagnostic:
+            self.logger.warning("Aucun diagnostic obtenu de PicoClaw.")
+            return
+
+        result = {
+            "anomaly_event": anomaly_event,
+            "diagnostic":    diagnostic,
+        }
+
+        self.logger.info(
+            f"Diagnostic généré : risque={diagnostic.get('risque')} | "
+            f"urgence={diagnostic.get('urgence')}"
         )
 
+        if self.on_decision:
+            self.on_decision(result)
+
+    # ------------------------------------------------------------------
+    # Construction du prompt
+    # ------------------------------------------------------------------
+
+    def _build_prompt(self, location: str, sensor_id: str, values: dict, anomalies: list) -> str:
+        vals_str = ", ".join(f"{k}={v}" for k, v in values.items() if k != "anomaly")
+        anom_str = ", ".join(a.get("type", "") for a in anomalies) if anomalies else values.get("anomaly", "inconnue")
+
+        prompt = f"""Tu es un expert en supervision de bâtiment intelligent (smart building).
+
+Une anomalie a été détectée sur le capteur IoT '{sensor_id}' dans la zone '{location}'.
+
+Type d'anomalie : {anom_str}
+Valeurs mesurées : {vals_str}
+
+Analyse cette situation et réponds UNIQUEMENT en JSON valide avec cette structure exacte :
+{{
+  "diagnostic": "description claire de la situation en français (2 phrases max)",
+  "cause_probable": "cause la plus probable en français",
+  "risque": "low|medium|high|critical",
+  "action_recommandee": "action concrète à entreprendre en français",
+  "urgence": true|false
+}}
+
+Réponds UNIQUEMENT avec le JSON, sans texte avant ni après, sans balise de code."""
+        return prompt
+
+    # ------------------------------------------------------------------
+    # Appel à PicoClaw via docker exec
+    # ------------------------------------------------------------------
+
+    def _query_picoclaw(self, prompt: str) -> Optional[dict]:
         try:
-            raw_response = self._call_ollama(prompt)
-            diagnostic   = self._parse_response(raw_response)
+            result = subprocess.run(
+                [
+                    "docker", "exec", self.container_name,
+                    "picoclaw", "agent", "-m", prompt
+                ],
+                capture_output=True,
+                text=True,
+                timeout=self.timeout,
+                encoding="utf-8",
+                errors="replace",
+            )
 
-            # Injecter les flags directs depuis les valeurs capteurs
-            values = anomaly_event.get("values", {})
-            diagnostic["_smoke_detected"] = values.get("smoke", 0) == 1
+            if result.returncode != 0:
+                self.logger.error(f"PicoClaw a retourné code {result.returncode}: {result.stderr[:200]}")
+                return None
 
-            if diagnostic:
-                result = {"anomaly_event": anomaly_event, "diagnostic": diagnostic}
-                self.logger.info(
-                    f"Diagnostic : {diagnostic.get('diagnostic', '?')} "
-                    f"| risque : {diagnostic.get('risque', '?')} "
-                    f"| urgence : {diagnostic.get('urgence', False)}"
-                )
-                if self.on_decision:
-                    self.on_decision(result)
-            else:
-                self.logger.error("Impossible de parser la réponse du LLM.")
+            output = result.stdout.strip()
+            return self._parse_response(output)
 
+        except subprocess.TimeoutExpired:
+            self.logger.error(f"Timeout ({self.timeout}s) pour la requête PicoClaw.")
+            return None
         except Exception as e:
-            self.logger.error(f"Erreur lors de l'analyse : {e}")
+            self.logger.error(f"Erreur appel PicoClaw : {e}")
+            return None
 
-    def _call_ollama(self, prompt: str) -> str:
-        payload = {
-            "model":  self.model,
-            "prompt": prompt,
-            "stream": False,
-            "format": "json",
-            "system": "Tu es un expert en gestion de bâtiment intelligent. Tu réponds TOUJOURS en français, jamais en anglais.",
-        }
-        response = requests.post(self.ollama_url, json=payload, timeout=150)
-        response.raise_for_status()
-        return response.json().get("response", "")
+    # ------------------------------------------------------------------
+    # Parsing de la réponse JSON (nettoie l'ASCII art + texte parasite)
+    # ------------------------------------------------------------------
 
-    def _parse_response(self, raw: str) -> Optional[dict]:
+    def _parse_response(self, output: str) -> Optional[dict]:
+        # Retirer l'ASCII art PicoClaw et emojis
+        # Chercher le premier { et le dernier } pour extraire le JSON
+        match = re.search(r"\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}", output, re.DOTALL)
+        if not match:
+            self.logger.warning(f"Aucun JSON trouvé dans la réponse : {output[:200]}")
+            return None
+
+        json_str = match.group(0)
+
         try:
-            start = raw.find("{")
-            end   = raw.rfind("}") + 1
-            if start == -1 or end == 0:
-                raise ValueError("Aucun JSON trouvé")
-            return json.loads(raw[start:end])
-        except (json.JSONDecodeError, ValueError) as e:
-            self.logger.error(f"Erreur parsing JSON : {e}\nRéponse : {raw[:200]}")
+            data = json.loads(json_str)
+            return data
+        except json.JSONDecodeError as e:
+            self.logger.warning(f"JSON invalide : {e} | contenu : {json_str[:200]}")
             return None
 
 
+# ------------------------------------------------------------------
+# Test standalone
+# ------------------------------------------------------------------
+
 if __name__ == "__main__":
     def print_decision(result):
-        print("\n--- RÉSULTAT ANALYSE ---")
-        d = result["diagnostic"]
-        print(f"  Diagnostic        : {d.get('diagnostic')}")
-        print(f"  Cause probable    : {d.get('cause_probable')}")
-        print(f"  Risque            : {d.get('risque')}")
-        print(f"  Action recommandée: {d.get('action_recommandee')}")
-        print(f"  Urgence           : {d.get('urgence')}")
-        print("------------------------\n")
+        print("=== DÉCISION REÇUE ===")
+        print(json.dumps(result, indent=2, ensure_ascii=False))
 
     agent = AnalysisAgent(on_decision=print_decision)
 
     test_event = {
-        "sensor_id": "esp32-server-room",
         "location":  "server_room",
-        "timestamp": "2026-04-10T11:00:00",
-        "values":    {"temperature": 42.5, "cpu_load_pct": 95.0, "power_w": 2400},
+        "sensor_id": "esp32-server-room",
+        "values":    {"temperature": 42.5, "cpu_load_pct": 95.0, "power_w": 2100},
         "anomalies": [
-            {"metric": "temperature",  "value": 42.5, "reason": "temperature trop élevé (42.5 > 30.0)", "severity": "critical"},
-            {"metric": "cpu_load_pct", "value": 95.0, "reason": "cpu_load_pct trop élevé (95.0 > 90)",  "severity": "high"},
+            {"type": "overheat", "severity": "critical"},
+            {"type": "cpu_spike", "severity": "high"},
         ],
     }
 
-    print("Envoi de l'événement test à Ollama...\n")
     agent.analyze(test_event)

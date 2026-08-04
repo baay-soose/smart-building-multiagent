@@ -175,6 +175,23 @@ class MonitorAgent:
                 self.on_anomaly(event)
 
     # ------------------------------------------------------------------
+    # Zones dynamiques
+    # ------------------------------------------------------------------
+
+    def register_zone(self, zone_id: str, thresholds: dict, severity_rules: dict = None):
+        """Enregistre une nouvelle zone avec ses seuils depuis le dashboard."""
+        ALERT_THRESHOLDS[zone_id] = thresholds
+        if severity_rules:
+            SEVERITY_RULES[zone_id] = severity_rules
+        self.logger.info(f"Zone enregistrée : {zone_id} | capteurs : {list(thresholds.keys())}")
+
+    def unregister_zone(self, zone_id: str):
+        """Supprime une zone dynamique."""
+        ALERT_THRESHOLDS.pop(zone_id, None)
+        SEVERITY_RULES.pop(zone_id, None)
+        self.logger.info(f"Zone supprimée : {zone_id}")
+
+    # ------------------------------------------------------------------
     # Démarrage / arrêt
     # ------------------------------------------------------------------
 
